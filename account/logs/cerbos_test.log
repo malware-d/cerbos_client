@@ -1,149 +1,149 @@
-[2025-07-17T10:40:54.155Z] 
+[2025-07-18T02:24:58.514Z] 
 ============================================================
-[2025-07-17T10:40:54.158Z] CERBOS ACCOUNT POLICY TEST SUITE
-[2025-07-17T10:40:54.158Z] ============================================================
-[2025-07-17T10:40:54.158Z] ℹ️  Testing account.yaml policy with all roles and scenarios
-[2025-07-17T10:40:54.158Z] ℹ️  Server: http://localhost:3000
-[2025-07-17T10:40:54.159Z] 
+[2025-07-18T02:24:58.516Z] CERBOS ACCOUNT POLICY TEST SUITE
+[2025-07-18T02:24:58.516Z] ============================================================
+[2025-07-18T02:24:58.517Z] ℹ️  Testing account.yaml policy with all roles and scenarios
+[2025-07-18T02:24:58.517Z] ℹ️  Server: http://localhost:3000
+[2025-07-18T02:24:58.517Z] 
 --- Testing: READ Account - Client Role ---
-[2025-07-17T10:40:54.159Z] ℹ️  Description: Client should be able to read account (allowed for client, teller, supervisor, admin)
-[2025-07-17T10:40:54.179Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:40:54.180Z] ℹ️  Request: GET /accounts/acc001
-[2025-07-17T10:40:58.119Z] ✅ PASSED - Status: 200
-[2025-07-17T10:40:58.120Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
-[2025-07-17T10:40:58.623Z] 
+[2025-07-18T02:24:58.517Z] ℹ️  Description: Client should be able to read account (allowed for client, teller, supervisor, admin)
+[2025-07-18T02:24:58.523Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:24:58.523Z] ℹ️  Request: GET /accounts/acc001
+[2025-07-18T02:24:58.901Z] ✅ PASSED - Status: 200
+[2025-07-18T02:24:58.901Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
+[2025-07-18T02:24:59.404Z] 
 --- Testing: READ Account - Teller Role ---
-[2025-07-17T10:40:58.625Z] ℹ️  Description: Teller should be able to read account
-[2025-07-17T10:40:58.655Z] ℹ️  User: Teller User (teller)
-[2025-07-17T10:40:58.655Z] ℹ️  Request: GET /accounts/acc001
-[2025-07-17T10:40:58.710Z] ✅ PASSED - Status: 200
-[2025-07-17T10:40:58.711Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
-[2025-07-17T10:40:59.213Z] 
+[2025-07-18T02:24:59.405Z] ℹ️  Description: Teller should be able to read account
+[2025-07-18T02:24:59.418Z] ℹ️  User: Teller User (teller)
+[2025-07-18T02:24:59.419Z] ℹ️  Request: GET /accounts/acc001
+[2025-07-18T02:24:59.453Z] ✅ PASSED - Status: 200
+[2025-07-18T02:24:59.454Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
+[2025-07-18T02:24:59.957Z] 
 --- Testing: READ Account - Supervisor Role ---
-[2025-07-17T10:40:59.213Z] ℹ️  Description: Supervisor should be able to read account
-[2025-07-17T10:40:59.219Z] ℹ️  User: Supervisor User (supervisor)
-[2025-07-17T10:40:59.221Z] ℹ️  Request: GET /accounts/acc001
-[2025-07-17T10:40:59.284Z] ✅ PASSED - Status: 200
-[2025-07-17T10:40:59.285Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
-[2025-07-17T10:40:59.787Z] 
+[2025-07-18T02:24:59.958Z] ℹ️  Description: Supervisor should be able to read account
+[2025-07-18T02:24:59.961Z] ℹ️  User: Supervisor User (supervisor)
+[2025-07-18T02:24:59.961Z] ℹ️  Request: GET /accounts/acc001
+[2025-07-18T02:24:59.991Z] ✅ PASSED - Status: 200
+[2025-07-18T02:24:59.992Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
+[2025-07-18T02:25:00.493Z] 
 --- Testing: READ Account - Admin Role ---
-[2025-07-17T10:40:59.787Z] ℹ️  Description: Admin should be able to read account
-[2025-07-17T10:40:59.789Z] ℹ️  User: Admin User (admin)
-[2025-07-17T10:40:59.789Z] ℹ️  Request: GET /accounts/acc001
-[2025-07-17T10:40:59.810Z] ✅ PASSED - Status: 200
-[2025-07-17T10:40:59.810Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
-[2025-07-17T10:41:00.312Z] 
+[2025-07-18T02:25:00.493Z] ℹ️  Description: Admin should be able to read account
+[2025-07-18T02:25:00.495Z] ℹ️  User: Admin User (admin)
+[2025-07-18T02:25:00.495Z] ℹ️  Request: GET /accounts/acc001
+[2025-07-18T02:25:00.506Z] ✅ PASSED - Status: 200
+[2025-07-18T02:25:00.521Z] ℹ️  Response: {"id":"acc001","ownerId":"mb000001","name":"Nguyen Van Anh","balance":50000000,"account_type":"normal"}
+[2025-07-18T02:25:01.022Z] 
 --- Testing: UPDATE Account - Client Role (Should Fail) ---
-[2025-07-17T10:41:00.313Z] ℹ️  Description: Client should NOT be able to update account (only teller, admin allowed)
-[2025-07-17T10:41:00.316Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:41:00.316Z] ℹ️  Request: PATCH /accounts/acc001
-[2025-07-17T10:41:00.440Z] ✅ PASSED - Status: 403 (Expected failure)
-[2025-07-17T10:41:00.441Z] ℹ️  Response: {"error":"Unauthorized"}
-[2025-07-17T10:41:00.944Z] 
+[2025-07-18T02:25:01.022Z] ℹ️  Description: Client should NOT be able to update account (only teller, admin allowed)
+[2025-07-18T02:25:01.024Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:25:01.024Z] ℹ️  Request: PATCH /accounts/acc001
+[2025-07-18T02:25:01.093Z] ✅ PASSED - Status: 403 (Expected failure)
+[2025-07-18T02:25:01.094Z] ℹ️  Response: {"error":"Unauthorized"}
+[2025-07-18T02:25:01.595Z] 
 --- Testing: UPDATE Account - Teller Role ---
-[2025-07-17T10:41:00.944Z] ℹ️  Description: Teller should be able to update account
-[2025-07-17T10:41:00.948Z] ℹ️  User: Teller User (teller)
-[2025-07-17T10:41:00.948Z] ℹ️  Request: PATCH /accounts/acc001
-[2025-07-17T10:41:01.057Z] ✅ PASSED - Status: 200
-[2025-07-17T10:41:01.059Z] ℹ️  Response: {"result":"Updated account acc001"}
-[2025-07-17T10:41:01.560Z] 
+[2025-07-18T02:25:01.596Z] ℹ️  Description: Teller should be able to update account
+[2025-07-18T02:25:01.598Z] ℹ️  User: Teller User (teller)
+[2025-07-18T02:25:01.598Z] ℹ️  Request: PATCH /accounts/acc001
+[2025-07-18T02:25:01.616Z] ✅ PASSED - Status: 200
+[2025-07-18T02:25:01.617Z] ℹ️  Response: {"result":"Updated account acc001"}
+[2025-07-18T02:25:02.120Z] 
 --- Testing: UPDATE Account - Admin Role ---
-[2025-07-17T10:41:01.561Z] ℹ️  Description: Admin should be able to update account
-[2025-07-17T10:41:01.567Z] ℹ️  User: Admin User (admin)
-[2025-07-17T10:41:01.568Z] ℹ️  Request: PATCH /accounts/acc001
-[2025-07-17T10:41:01.603Z] ✅ PASSED - Status: 200
-[2025-07-17T10:41:01.603Z] ℹ️  Response: {"result":"Updated account acc001"}
-[2025-07-17T10:41:02.104Z] 
+[2025-07-18T02:25:02.122Z] ℹ️  Description: Admin should be able to update account
+[2025-07-18T02:25:02.125Z] ℹ️  User: Admin User (admin)
+[2025-07-18T02:25:02.125Z] ℹ️  Request: PATCH /accounts/acc001
+[2025-07-18T02:25:02.149Z] ✅ PASSED - Status: 200
+[2025-07-18T02:25:02.149Z] ℹ️  Response: {"result":"Updated account acc001"}
+[2025-07-18T02:25:02.650Z] 
 --- Testing: CREATE Account - Client Role (Should Fail) ---
-[2025-07-17T10:41:02.105Z] ℹ️  Description: Client should NOT be able to create account (only admin allowed)
-[2025-07-17T10:41:02.106Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:41:02.106Z] ℹ️  Request: POST /accounts/new
-[2025-07-17T10:41:02.129Z] ✅ PASSED - Status: 403 (Expected failure)
-[2025-07-17T10:41:02.129Z] ℹ️  Response: {"error":"Unauthorized"}
-[2025-07-17T10:41:02.629Z] 
+[2025-07-18T02:25:02.651Z] ℹ️  Description: Client should NOT be able to create account (only admin allowed)
+[2025-07-18T02:25:02.652Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:25:02.652Z] ℹ️  Request: POST /accounts/new
+[2025-07-18T02:25:02.724Z] ✅ PASSED - Status: 403 (Expected failure)
+[2025-07-18T02:25:02.724Z] ℹ️  Response: {"error":"Unauthorized"}
+[2025-07-18T02:25:03.225Z] 
 --- Testing: CREATE Account - Teller Role (Should Fail) ---
-[2025-07-17T10:41:02.630Z] ℹ️  Description: Teller should NOT be able to create account (only admin allowed)
-[2025-07-17T10:41:02.631Z] ℹ️  User: Teller User (teller)
-[2025-07-17T10:41:02.631Z] ℹ️  Request: POST /accounts/new
-[2025-07-17T10:41:02.684Z] ✅ PASSED - Status: 403 (Expected failure)
-[2025-07-17T10:41:02.684Z] ℹ️  Response: {"error":"Unauthorized"}
-[2025-07-17T10:41:03.185Z] 
+[2025-07-18T02:25:03.225Z] ℹ️  Description: Teller should NOT be able to create account (only admin allowed)
+[2025-07-18T02:25:03.229Z] ℹ️  User: Teller User (teller)
+[2025-07-18T02:25:03.229Z] ℹ️  Request: POST /accounts/new
+[2025-07-18T02:25:03.263Z] ✅ PASSED - Status: 403 (Expected failure)
+[2025-07-18T02:25:03.263Z] ℹ️  Response: {"error":"Unauthorized"}
+[2025-07-18T02:25:03.765Z] 
 --- Testing: CREATE Account - Admin Role ---
-[2025-07-17T10:41:03.185Z] ℹ️  Description: Admin should be able to create account
-[2025-07-17T10:41:03.188Z] ℹ️  User: Admin User (admin)
-[2025-07-17T10:41:03.188Z] ℹ️  Request: POST /accounts/new
-[2025-07-17T10:41:03.204Z] ✅ PASSED - Status: 200
-[2025-07-17T10:41:03.205Z] ℹ️  Response: {"result":"Created account"}
-[2025-07-17T10:41:03.706Z] 
+[2025-07-18T02:25:03.765Z] ℹ️  Description: Admin should be able to create account
+[2025-07-18T02:25:03.766Z] ℹ️  User: Admin User (admin)
+[2025-07-18T02:25:03.766Z] ℹ️  Request: POST /accounts/new
+[2025-07-18T02:25:03.794Z] ✅ PASSED - Status: 200
+[2025-07-18T02:25:03.794Z] ℹ️  Response: {"result":"Created account"}
+[2025-07-18T02:25:04.296Z] 
 --- Testing: TRANSFER - Client with Small Amount (≤ 100M) ---
-[2025-07-17T10:41:03.706Z] ℹ️  Description: Client should be able to transfer amounts ≤ 100M VND
-[2025-07-17T10:41:03.707Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:41:03.708Z] ℹ️  Request: POST /accounts/acc001/transfer
-[2025-07-17T10:41:03.708Z] ℹ️  Data: {"amount":50000000}
-[2025-07-17T10:41:03.759Z] ✅ PASSED - Status: 200
-[2025-07-17T10:41:03.759Z] ℹ️  Response: {"result":"Transferred 50000000 from account acc001"}
-[2025-07-17T10:41:04.262Z] 
+[2025-07-18T02:25:04.296Z] ℹ️  Description: Client should be able to transfer amounts ≤ 100M VND
+[2025-07-18T02:25:04.297Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:25:04.298Z] ℹ️  Request: POST /accounts/acc001/transfer
+[2025-07-18T02:25:04.298Z] ℹ️  Data: {"amount":50000000}
+[2025-07-18T02:25:04.323Z] ✅ PASSED - Status: 200
+[2025-07-18T02:25:04.324Z] ℹ️  Response: {"result":"Transferred 50000000 from account acc001"}
+[2025-07-18T02:25:04.825Z] 
 --- Testing: TRANSFER - Client with Large Amount (> 100M) (Should Fail) ---
-[2025-07-17T10:41:04.263Z] ℹ️  Description: Client should NOT be able to transfer amounts > 100M VND
-[2025-07-17T10:41:04.264Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:41:04.264Z] ℹ️  Request: POST /accounts/acc001/transfer
-[2025-07-17T10:41:04.264Z] ℹ️  Data: {"amount":150000000}
-[2025-07-17T10:41:04.288Z] ✅ PASSED - Status: 403 (Expected failure)
-[2025-07-17T10:41:04.288Z] ℹ️  Response: {"error":"Unauthorized"}
-[2025-07-17T10:41:04.789Z] 
+[2025-07-18T02:25:04.826Z] ℹ️  Description: Client should NOT be able to transfer amounts > 100M VND
+[2025-07-18T02:25:04.829Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:25:04.830Z] ℹ️  Request: POST /accounts/acc001/transfer
+[2025-07-18T02:25:04.830Z] ℹ️  Data: {"amount":150000000}
+[2025-07-18T02:25:04.869Z] ✅ PASSED - Status: 403 (Expected failure)
+[2025-07-18T02:25:04.870Z] ℹ️  Response: {"error":"Unauthorized"}
+[2025-07-18T02:25:05.373Z] 
 --- Testing: TRANSFER - Client with Exact Limit (100M) ---
-[2025-07-17T10:41:04.791Z] ℹ️  Description: Client should be able to transfer exactly 100M VND
-[2025-07-17T10:41:04.795Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:41:04.795Z] ℹ️  Request: POST /accounts/acc001/transfer
-[2025-07-17T10:41:04.795Z] ℹ️  Data: {"amount":100000000}
-[2025-07-17T10:41:04.824Z] ✅ PASSED - Status: 200
-[2025-07-17T10:41:04.824Z] ℹ️  Response: {"result":"Transferred 100000000 from account acc001"}
-[2025-07-17T10:41:05.326Z] 
+[2025-07-18T02:25:05.374Z] ℹ️  Description: Client should be able to transfer exactly 100M VND
+[2025-07-18T02:25:05.378Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:25:05.378Z] ℹ️  Request: POST /accounts/acc001/transfer
+[2025-07-18T02:25:05.379Z] ℹ️  Data: {"amount":100000000}
+[2025-07-18T02:25:05.421Z] ✅ PASSED - Status: 200
+[2025-07-18T02:25:05.422Z] ℹ️  Response: {"result":"Transferred 100000000 from account acc001"}
+[2025-07-18T02:25:05.924Z] 
 --- Testing: TRANSFER - VIP Client with Large Amount ---
-[2025-07-17T10:41:05.326Z] ℹ️  Description: VIP Client should be able to transfer any amount
-[2025-07-17T10:41:05.328Z] ℹ️  User: Dao Van Binh (vip_client)
-[2025-07-17T10:41:05.329Z] ℹ️  Request: POST /accounts/acc002/transfer
-[2025-07-17T10:41:05.329Z] ℹ️  Data: {"amount":1500000000}
-[2025-07-17T10:41:05.356Z] ✅ PASSED - Status: 200
-[2025-07-17T10:41:05.356Z] ℹ️  Response: {"result":"Transferred 1500000000 from account acc002"}
-[2025-07-17T10:41:05.857Z] 
+[2025-07-18T02:25:05.926Z] ℹ️  Description: VIP Client should be able to transfer any amount
+[2025-07-18T02:25:05.927Z] ℹ️  User: Dao Van Binh (vip_client)
+[2025-07-18T02:25:05.927Z] ℹ️  Request: POST /accounts/acc002/transfer
+[2025-07-18T02:25:05.927Z] ℹ️  Data: {"amount":1500000000}
+[2025-07-18T02:25:05.944Z] ✅ PASSED - Status: 200
+[2025-07-18T02:25:05.945Z] ℹ️  Response: {"result":"Transferred 1500000000 from account acc002"}
+[2025-07-18T02:25:06.447Z] 
 --- Testing: TRANSFER - Teller Role (Should Fail) ---
-[2025-07-17T10:41:05.857Z] ℹ️  Description: Teller should NOT be able to transfer (only client roles allowed)
-[2025-07-17T10:41:05.858Z] ℹ️  User: Teller User (teller)
-[2025-07-17T10:41:05.858Z] ℹ️  Request: POST /accounts/acc001/transfer
-[2025-07-17T10:41:05.858Z] ℹ️  Data: {"amount":50000000}
-[2025-07-17T10:41:05.872Z] ✅ PASSED - Status: 403 (Expected failure)
-[2025-07-17T10:41:05.872Z] ℹ️  Response: {"error":"Unauthorized"}
-[2025-07-17T10:41:06.376Z] 
+[2025-07-18T02:25:06.448Z] ℹ️  Description: Teller should NOT be able to transfer (only client roles allowed)
+[2025-07-18T02:25:06.449Z] ℹ️  User: Teller User (teller)
+[2025-07-18T02:25:06.449Z] ℹ️  Request: POST /accounts/acc001/transfer
+[2025-07-18T02:25:06.449Z] ℹ️  Data: {"amount":50000000}
+[2025-07-18T02:25:06.473Z] ✅ PASSED - Status: 403 (Expected failure)
+[2025-07-18T02:25:06.473Z] ℹ️  Response: {"error":"Unauthorized"}
+[2025-07-18T02:25:06.974Z] 
 --- Testing: TRANSFER - Admin Role (Should Fail) ---
-[2025-07-17T10:41:06.376Z] ℹ️  Description: Admin should NOT be able to transfer (only client roles allowed)
-[2025-07-17T10:41:06.381Z] ℹ️  User: Admin User (admin)
-[2025-07-17T10:41:06.381Z] ℹ️  Request: POST /accounts/acc001/transfer
-[2025-07-17T10:41:06.381Z] ℹ️  Data: {"amount":50000000}
-[2025-07-17T10:41:06.406Z] ✅ PASSED - Status: 403 (Expected failure)
-[2025-07-17T10:41:06.409Z] ℹ️  Response: {"error":"Unauthorized"}
-[2025-07-17T10:41:06.910Z] 
+[2025-07-18T02:25:06.975Z] ℹ️  Description: Admin should NOT be able to transfer (only client roles allowed)
+[2025-07-18T02:25:06.976Z] ℹ️  User: Admin User (admin)
+[2025-07-18T02:25:06.976Z] ℹ️  Request: POST /accounts/acc001/transfer
+[2025-07-18T02:25:06.976Z] ℹ️  Data: {"amount":50000000}
+[2025-07-18T02:25:07.011Z] ✅ PASSED - Status: 403 (Expected failure)
+[2025-07-18T02:25:07.012Z] ℹ️  Response: {"error":"Unauthorized"}
+[2025-07-18T02:25:07.512Z] 
 --- Testing: READ Account - Expired JWT (Should Fail) ---
-[2025-07-17T10:41:06.910Z] ℹ️  Description: Should fail when using expired JWT token
-[2025-07-17T10:41:06.912Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:41:06.912Z] ℹ️  Request: GET /accounts/acc001
-[2025-07-17T10:41:06.923Z] ✅ PASSED - Status: 401 (Expected failure)
-[2025-07-17T10:41:06.924Z] ℹ️  Response: {"error":"Unauthorized","details":"Token has expired","code":"token_expired"}
-[2025-07-17T10:41:06.924Z] ℹ️  Error Details: Token has expired
-[2025-07-17T10:41:07.427Z] 
+[2025-07-18T02:25:07.513Z] ℹ️  Description: Should fail when using expired JWT token
+[2025-07-18T02:25:07.514Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:25:07.515Z] ℹ️  Request: GET /accounts/acc001
+[2025-07-18T02:25:07.547Z] ✅ PASSED - Status: 401 (Expected failure)
+[2025-07-18T02:25:07.550Z] ℹ️  Response: {"error":"Unauthorized","details":"Token has expired","code":"token_expired"}
+[2025-07-18T02:25:07.551Z] ℹ️  Error Details: Token has expired
+[2025-07-18T02:25:08.053Z] 
 --- Testing: READ Account - Wrong JWT Secret (MITM) (Should Fail) ---
-[2025-07-17T10:41:07.428Z] ℹ️  Description: Should fail when using JWT signed with wrong secret (simulating MITM attack)
-[2025-07-17T10:41:07.431Z] ℹ️  User: Nguyen Van Anh (client)
-[2025-07-17T10:41:07.431Z] ℹ️  Request: GET /accounts/acc001
-[2025-07-17T10:41:07.523Z] ✅ PASSED - Status: 401 (Expected failure)
-[2025-07-17T10:41:07.524Z] ℹ️  Response: {"error":"Unauthorized","details":"Invalid token signature","code":"invalid_signature"}
-[2025-07-17T10:41:07.524Z] ℹ️  Error Details: Invalid token signature
-[2025-07-17T10:41:08.025Z] 
+[2025-07-18T02:25:08.054Z] ℹ️  Description: Should fail when using JWT signed with wrong secret (simulating MITM attack)
+[2025-07-18T02:25:08.057Z] ℹ️  User: Nguyen Van Anh (client)
+[2025-07-18T02:25:08.057Z] ℹ️  Request: GET /accounts/acc001
+[2025-07-18T02:25:08.309Z] ✅ PASSED - Status: 401 (Expected failure)
+[2025-07-18T02:25:08.311Z] ℹ️  Response: {"error":"Unauthorized","details":"Invalid token signature","code":"invalid_signature"}
+[2025-07-18T02:25:08.318Z] ℹ️  Error Details: Invalid token signature
+[2025-07-18T02:25:08.820Z] 
 ============================================================
-[2025-07-17T10:41:08.026Z] TEST RESULTS SUMMARY
-[2025-07-17T10:41:08.026Z] ============================================================
-[2025-07-17T10:41:08.026Z] ℹ️  Total Tests: 18
-[2025-07-17T10:41:08.026Z] ✅ Passed: 18
-[2025-07-17T10:41:08.026Z] ❌ Failed: 0
-[2025-07-17T10:41:08.026Z] ✅ 
+[2025-07-18T02:25:08.821Z] TEST RESULTS SUMMARY
+[2025-07-18T02:25:08.821Z] ============================================================
+[2025-07-18T02:25:08.822Z] ℹ️  Total Tests: 18
+[2025-07-18T02:25:08.822Z] ✅ Passed: 18
+[2025-07-18T02:25:08.823Z] ❌ Failed: 0
+[2025-07-18T02:25:08.823Z] ✅ 
 🎉 ALL TESTS PASSED! Account policy is working correctly.
